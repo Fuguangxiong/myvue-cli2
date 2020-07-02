@@ -15,6 +15,8 @@
   },
   "dependencies": {
     "vue": "^2.5.2",
+    "vue-class-component": "^7.2.3",
+    "vue-property-decorator": "^9.0.0",
     "vue-router": "^3.0.1"
   },
   "devDependencies": {
@@ -67,15 +69,21 @@
     "semver": "^5.3.0",
     "shelljs": "^0.7.6",
     "style-loader": "^1.2.1",
+    "ts-loader": "^7.0.5",
+    "tslint": "^6.1.2",
+    "tslint-config-standard": "^9.0.0",
+    "tslint-loader": "^3.5.4",
+    "typescript": "^3.9.6",
     "uglifyjs-webpack-plugin": "^1.1.1",
     "url-loader": "^0.5.8",
     "vue-jest": "^1.0.2",
     "vue-loader": "^13.3.0",
     "vue-style-loader": "^3.1.2",
     "vue-template-compiler": "^2.5.2",
-    "webpack": "^3.6.0",
+    "webpack": "^4.43.0",
     "webpack-bundle-analyzer": "^2.9.0",
-    "webpack-dev-server": "^2.9.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0",
     "webpack-merge": "^4.1.0"
   },
   "engines": {
