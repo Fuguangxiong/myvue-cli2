@@ -1,24 +1,30 @@
 <template>
-  <div class="hello">
-    <p><a href="">徐娟</a></p>
+  <div>
+    <div id="reply"></div>
   </div>
 </template>
 
-<script>
-export default {
-  name: 'HelloWorld',
-  data () {
-    return {
+<script lang="ts">
+  import { Vue, Component, Prop, Watch } from 'vue-property-decorator';
+
+
+  @Component({})
+  export default class HelloWorld extends Vue {
+    @Prop({ required: true, default: {} })
+    private data: any;
+
+    @Watch('data', { deep: true })
+    initData() {
+      this.getOption();
+    }
+
+    getOption() {
+
     }
   }
-}
 </script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped lang="scss" type="text/css">
-  p {
-    a {
-     font-size: 18px;
-    }
+<style lang="scss" scoped>
+  #reply {
+    height: 500px;
   }
 </style>
